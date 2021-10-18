@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Namu';
+  src: url('/assets/namu');
+}
+
+@font-face {
+  font-family: GT Pressura;
+  src: url('/assets/gt-pressura');
+}
+
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--white);
+}

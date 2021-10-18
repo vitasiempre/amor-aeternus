@@ -1,0 +1,12 @@
+.Button {
+  background: var(--velvet);
+  color: var(--fill-gray);
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+
+  &:hover {
+    filter: brightness(110%);
+  }
+}

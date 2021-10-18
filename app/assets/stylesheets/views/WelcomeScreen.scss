@@ -1,0 +1,21 @@
+.AmorEterna {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  display: block;
+}
+
+.Button {
+  background: var(--velvet);
+  color: var(--fill-gray);
+  padding: 14px 64px 24px 64px;
+  border-radius: 50px;
+  font-size: 28px;
+  // line-height: 18px;
+  display: inline-block;
+  font-family: "Namu", sans-serif;
+
+  &:hover {
+    background-color: var(velvet);
+  }
+}
