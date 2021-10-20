@@ -5,7 +5,22 @@ import Slider from '../control_components/Slider'
 import Knob from '../control_components/Knob'
 import ButtonSet from '../control_components/ButtonSet'
 
+import { instrument } from '../tunes/main'
 
+const settings = {
+  volume: 0.8,
+  detune: 0,
+  portamento: 0.05,
+  envelope: {
+    attack: 0.05,
+    attackCurve: 'exponential',
+    decay: 0.2,
+    decayCurve: 'exponential',
+    sustain: 0.2,
+    release: 1.5,
+    releaseCurve: 'exponential'
+  }
+}
 
 export default class Pad extends Component {
   constructor(props) {
@@ -13,7 +28,7 @@ export default class Pad extends Component {
   }
 
   updateNodeParams = () => {
-    const { settings } = this.props
+    // const { settings } = this.props
     const { volume } = settings
 
     node.volume.value = volume
@@ -42,7 +57,7 @@ export default class Pad extends Component {
           max={10}
           step={0.01}
           value={volume}
-          handleChange={this.handlePropertyValueChange}
+          handlePropertyValueChange={this.handlePropertyValueChange}
         />
       </div>
     )

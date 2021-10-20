@@ -3,6 +3,8 @@ import React, { PureComponent } from 'react'
 import WelcomeScreen from '../views/WelcomeScreen'
 import SynthScreen from '../views/SynthScreen'
 
+import * as allEffectsSynth from '../tunes/main'
+
 export default class SynthContainer extends PureComponent {
   constructor(props) {
     super(props)
@@ -85,6 +87,8 @@ export default class SynthContainer extends PureComponent {
       instruments
     })
   }
+
+
 
   renderSynthScreen = () => {
     const { instruments } = this.state
