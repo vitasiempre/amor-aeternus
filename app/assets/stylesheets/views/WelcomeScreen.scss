@@ -3,16 +3,81 @@
   position: absolute;
   bottom: 0;
   display: block;
+  z-index: 100;
 }
 
+.StarterOrnament {
+  position: absolute;
+  top: 7px;
+  left: 91px;
+  display: block;
+}
+
+.Gem1 {
+  position: absolute;
+  top: 183px;
+  height: 492px;
+  left: -16px;
+}
+
+.Gem2 {
+  position: absolute;
+  top: 55px;
+  height: 144px;
+  left: 648px;
+  transform: scaleX(-1) scaleY(-1);
+}
+
+.Gem3 {
+  position: absolute;
+  top: 28px;
+  height: 212px;
+  left: 124px;
+  transform: scaleY(-1);
+}
+
+.Gem4 {
+  position: absolute;
+  top: 231px;
+  height: 396px;
+  left: 1012px;
+  transform: scaleX(-1) scaleY(-1);
+}
+
+.Gem5 {
+  position: absolute;
+  top: 551px;
+  height: 170px;
+  left: 635px;
+  transform: scaleX(-1);
+}
+
+.Gem6 {
+  position: absolute;
+  top: 14px;
+  height: 240px;
+  left: 1090px;
+  transform: scaleY(-1);
+}
+
+
+
 .Button {
+  position: absolute;
+  text-transform: uppercase;
+  left: 614px;
+  top: 300px;
+  height: 74px;
+  width: 211px;
   background: var(--velvet);
   color: var(--fill-gray);
-  padding: 14px 64px 24px 64px;
   border-radius: 50px;
   font-size: 28px;
-  // line-height: 18px;
-  display: inline-block;
+  line-height: 18px;
+  padding-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Namu", sans-serif;
 
   &:hover {

@@ -21,7 +21,7 @@ export default class SynthContainer extends PureComponent {
       webAudioStarted: true
     })
 
-
+    
   }
 
   initInstruments = () => {

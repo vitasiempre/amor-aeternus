@@ -2,10 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import SynthContainer from '../containers/SynthContainer'
 
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('synth');
+window.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(
     <SynthContainer />,
     document.body.appendChild(document.createElement('div'))
   )
-})
+}, { once: true });
